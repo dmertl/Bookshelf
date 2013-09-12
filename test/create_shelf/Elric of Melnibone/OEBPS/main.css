@@ -1,0 +1,30 @@
+body {
+ display: block;
+ font-size: 1em;
+ margin-bottom: 0;
+margin-left: 5pt;
+margin-right: 5pt;
+margin-top: 0;
+padding-left: 0;
+padding-right: 0
+}
+p.text {
+display: block;
+text-indent: 1em;
+margin-bottom:1em;
+margin-left: 0;
+margin-right: 0;
+margin-top: 1em;
+}
+div.div1 {
+width: 100%
+}
+img.img1 {
+width: 100%
+}
+p { display: block; 
+ margin-bottom: 0; 
+margin-left: 0; 
+margin-right: 0; 
+margin-top: 0; 
+text-indent: 1em }

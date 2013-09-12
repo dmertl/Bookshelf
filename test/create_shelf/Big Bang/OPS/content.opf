@@ -1,0 +1,236 @@
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BigBang" version="2.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+      <dc:title>Big Bang</dc:title>
+      <dc:creator opf:file-as="Simon Singh  " opf:role="aut">Simon Singh</dc:creator>
+      <dc:publisher>HarperCollins Publishers</dc:publisher>
+      <dc:identifier id="BigBang" opf:scheme="isbn">9780007375509</dc:identifier>
+      <dc:language>en-US</dc:language>
+      <dc:rights>Copyright (c) Simon Singh 2004</dc:rights>
+      <meta content="my-cover-image" name="cover"/>
+  <description xmlns="http://purl.org/dc/elements/1.1/">The bestselling author of Fermat?s Last Theorem and The Code Book tells the story of the brilliant minds that deciphered the mysteries of the Big Bang. A fascinating exploration of the ultimate question: how was our universe created? Albert Einstein once said: ?The most incomprehensible thing about the universe is that it is comprehensible.? Simon Singh believes geniuses like Einstein are not the only people able to grasp the physics that govern the universe. We all can. As well as explaining what the Big Bang theory actually is and why cosmologists believe it is an accurate description of the origins of the universe, this book is also the fascinating story of the scientists who fought against the established idea of an eternal and unchanging universe. Simon Singh, renowned for making difficult ideas much less daunting than they first seem, is the perfect guide for this journey. Everybody has heard of the Big Bang Theory. But how many of us can actually claim to understand it?...</description>
+</metadata>
+
+  <manifest>
+    <!-- Content Documents -->
+
+    <item href="001-coverpage.html" id="coverpage" media-type="application/xhtml+xml"/>
+    <item href="002-titlepage.html" id="titlepage" media-type="application/xhtml+xml"/>
+    <item href="003-dedication.html" id="dedication" media-type="application/xhtml+xml"/>
+    <item href="004-epigraph.html" id="epigraph" media-type="application/xhtml+xml"/>
+    <item href="005-toc.html" id="toc" media-type="application/xhtml+xml"/>
+    <item href="006-chapter1.html" id="chapter1" media-type="application/xhtml+xml"/>
+    <item href="007-chapter2.html" id="chapter2" media-type="application/xhtml+xml"/>
+    <item href="008-chapter3.html" id="chapter3" media-type="application/xhtml+xml"/>
+    <item href="009-chapter4.html" id="chapter4" media-type="application/xhtml+xml"/>
+    <item href="010-chapter5.html" id="chapter5" media-type="application/xhtml+xml"/>
+    <item href="011-epilogue.html" id="epilogue" media-type="application/xhtml+xml"/>
+    <item href="012-whatisscience.html" id="whatisscience" media-type="application/xhtml+xml"/>
+    <item href="013-glossary.html" id="glossary" media-type="application/xhtml+xml"/>
+    <item href="014-furtherreading.html" id="furtherreading" media-type="application/xhtml+xml"/>
+    <item href="015-index.html" id="index" media-type="application/xhtml+xml"/>
+    <item href="017-ps.html" id="ps" media-type="application/xhtml+xml"/>
+    <item href="018-abouttheauthor.html" id="abouttheauthor1" media-type="application/xhtml+xml"/>
+    <item href="019-aboutthebook.html" id="aboutthebook" media-type="application/xhtml+xml"/>
+    <item href="020-readon.html" id="readon" media-type="application/xhtml+xml"/>
+    <item href="016-acknowledgements.html" id="acknowledgements" media-type="application/xhtml+xml"/>
+    <item href="021-abouttheauthor.html" id="abouttheauthor2" media-type="application/xhtml+xml"/>
+    <item href="022-praise.html" id="praise" media-type="application/xhtml+xml"/>
+    <item href="023-otherbooksby.html" id="otherbooksby" media-type="application/xhtml+xml"/>
+    <item href="024-copyright.html" id="copyright" media-type="application/xhtml+xml"/>
+    <item href="025-aboutthepublisher.html" id="aboutthepublisher" media-type="application/xhtml+xml"/>
+
+<!-- CSS Style Sheets -->
+    <item href="LD.css" id="style" media-type="text/css"/>
+<!-- Toc -->
+   <item href="Toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+   <item href="page-template.xpgt" id="pt" media-type="application/vnd.adobe-page-template+xml"/>
+   <!-- Images -->
+    <item href="images/9780007152520_interior-12.jpg" id="img1" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-14.jpg" id="img2" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-15.jpg" id="img3" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-17.jpg" id="img4" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-18.jpg" id="img5" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-23.jpg" id="img6" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-26.jpg" id="img7" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-29.jpg" id="img8" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-31.jpg" id="img9" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-42.jpg" id="img10" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-50.jpg" id="img11" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-55.jpg" id="img12" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-57.jpg" id="img13" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-62.jpg" id="img14" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-64.jpg" id="img15" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-66.jpg" id="img16" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-82.jpg" id="img17" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-83.jpg" id="img18" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-91.jpg" id="img19" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-96.jpg" id="img20" media-type="image/jpeg"/>    
+    <item href="images/9780007152520_interior-110.jpg" id="img21" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-111.jpg" id="img22" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-112a.jpg" id="img23" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-112b.jpg" id="img24" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-112c.jpg" id="img25" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-118.jpg" id="img26" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-121.jpg" id="img27" media-type="image/jpeg"/>
+	<item href="images/9780007152520_interior-127.jpg" id="img28" media-type="image/jpeg"/>
+    	<item href="images/9780007152520_interior-128.jpg" id="img29" media-type="image/jpeg"/>
+    	<item href="images/9780007152520_interior-131.jpg" id="img30" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-132.jpg" id="img31" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-141.jpg" id="img32" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-154.jpg" id="img33" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-162.jpg" id="img34" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-163.jpg" id="img35" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-176.jpg" id="img36" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-179.jpg" id="img37" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-198.jpg" id="img38" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-199.jpg" id="img39" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-211.jpg" id="img40" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-231.jpg" id="img41" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-233.jpg" id="img42" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-234.jpg" id="img43" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-235.jpg" id="img44" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-236.jpg" id="img45" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-242.jpg" id="img46" media-type="image/jpeg"/>    
+    		<item href="images/9780007152520_interior-243.jpg" id="img47" media-type="image/jpeg"/>
+    		<item href="images/9780007152520_interior-245.jpg" id="img48" media-type="image/jpeg"/>
+    	<item href="images/9780007152520_interior-245a.jpg" id="img48a" media-type="image/jpeg"/>
+    	<item href="images/9780007152520_interior-245b.jpg" id="img49" media-type="image/jpeg"/>
+    	<item href="images/9780007152520_interior-253.jpg" id="img50" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-255.jpg" id="img51" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-257.jpg" id="img52" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-258.jpg" id="img53" media-type="image/jpeg"/>
+    <item href="images/9780007152520_interior-259.jpg" id="img54" media-type="image/jpeg"/>		
+		<item href="images/9780007152520_interior-262.jpg" id="img55" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-263.jpg" id="img56" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-271.jpg" id="img57" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-287.jpg" id="img58" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-289.jpg" id="img59" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-291.jpg" id="img60" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-294.jpg" id="img61" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-296.jpg" id="img62" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-298.jpg" id="img63" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-304.jpg" id="img64" media-type="image/jpeg"/>		
+		<item href="images/9780007152520_interior-321.jpg" id="img65" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-325.jpg" id="img66" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-327.jpg" id="img67" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-329.jpg" id="img68" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-331.jpg" id="img69" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-346.jpg" id="img70" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-354.jpg" id="img71" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-355.jpg" id="img72" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-388.jpg" id="img73" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-392.jpg" id="img74" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-394.jpg" id="img75" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-399.jpg" id="img76" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-407.jpg" id="img77" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-411.jpg" id="img78" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-419.jpg" id="img79" media-type="image/jpeg"/>		
+		<item href="images/9780007152520_interior-452.jpg" id="img80" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-458.jpg" id="img81" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-461.jpg" id="img82" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-464.jpg" id="img83" media-type="image/jpeg"/>
+		<item href="images/9780007152520_interior-465.jpg" id="img84" media-type="image/jpeg"/>
+		<item href="images/p474-01.jpg" id="img85" media-type="image/jpeg"/>
+		<item href="images/p81-01.jpg" id="img88" media-type="image/jpeg"/>
+		<item href="images/p81-02.jpg" id="img89" media-type="image/jpeg"/>
+		<item href="images/p81-03.jpg" id="img90" media-type="image/jpeg"/>
+		<item href="images/p81-04.jpg" id="img91" media-type="image/jpeg"/>
+		<item href="images/p118-01.jpg" id="img92" media-type="image/jpeg"/>
+		<item href="images/p154-01.jpg" id="img93" media-type="image/jpeg"/>
+		<item href="images/p160-01.jpg" id="img94" media-type="image/jpeg"/>		     
+		<item href="images/p167-01.jpg" id="img95" media-type="image/jpeg"/>
+		<item href="images/p180-01.jpg" id="img96" media-type="image/jpeg"/>
+		<item href="images/p182-01.jpg" id="img97" media-type="image/jpeg"/>
+		<item href="images/p198-01.jpg" id="img98" media-type="image/jpeg"/>
+		<item href="images/p201-01.jpg" id="img99" media-type="image/jpeg"/>
+		<item href="images/p201-02.jpg" id="img100" media-type="image/jpeg"/>
+		<item href="images/p212-01.jpg" id="img101" media-type="image/jpeg"/>
+		<item href="images/p215-01.jpg" id="img102" media-type="image/jpeg"/>
+		<item href="images/p218-01.jpg" id="img103" media-type="image/jpeg"/>
+		<item href="images/p226-01.jpg" id="img104" media-type="image/jpeg"/>
+		<item href="images/p230-01.jpg" id="img105" media-type="image/jpeg"/>
+		<item href="images/p232-01.jpg" id="img106" media-type="image/jpeg"/>
+		<item href="images/p235-01.jpg" id="img107" media-type="image/jpeg"/>
+		<item href="images/p248-01.jpg" id="img108" media-type="image/jpeg"/>
+		<item href="images/p248-02.jpg" id="img109" media-type="image/jpeg"/>
+		<item href="images/p285-01.jpg" id="img110" media-type="image/jpeg"/>
+		<item href="images/p288-01.jpg" id="img111" media-type="image/jpeg"/>
+		<item href="images/p298-01.jpg" id="img112" media-type="image/jpeg"/>
+		<item href="images/p298-02.jpg" id="img113" media-type="image/jpeg"/>
+		<item href="images/p318-01.jpg" id="img114" media-type="image/jpeg"/>
+		<item href="images/p318-02.jpg" id="img115" media-type="image/jpeg"/>
+		<item href="images/p318-03.jpg" id="img116" media-type="image/jpeg"/>
+		<item href="images/p318-04.jpg" id="img117" media-type="image/jpeg"/>
+		<item href="images/p318-05.jpg" id="img118" media-type="image/jpeg"/>
+		<item href="images/p320-01.jpg" id="img119" media-type="image/jpeg"/>
+		<item href="images/p320-02.jpg" id="img120" media-type="image/jpeg"/>
+		<item href="images/p322-01.jpg" id="img121" media-type="image/jpeg"/>
+		<item href="images/p349-01.jpg" id="img122" media-type="image/jpeg"/>
+		<item href="images/p349-02.jpg" id="img123" media-type="image/jpeg"/>
+		<item href="images/p349-03.jpg" id="img124" media-type="image/jpeg"/>
+		<item href="images/p349-04.jpg" id="img125" media-type="image/jpeg"/>
+		<item href="images/p352-01.jpg" id="img126" media-type="image/jpeg"/>
+		<item href="images/p359-01.jpg" id="img127" media-type="image/jpeg"/>
+		<item href="images/p394-01.jpg" id="img128" media-type="image/jpeg"/>   
+		<item href="images/9780007152520_interior-58.jpg" id="img129" media-type="image/jpeg"/>	
+		<item href="images/9780007152520_interior-193.jpg" id="img130" media-type="image/jpeg"/>	 		
+   		<item href="images/9780007152520_interior-195.jpg" id="img131" media-type="image/jpeg"/>			
+	<item href="images/9780007152520_interior-240.jpg" id="img132" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-345.jpg" id="img133" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-414.jpg" id="img134" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-437.jpg" id="img135" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-449.jpg" id="img136" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-451.jpg" id="img137" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-459.jpg" id="img138" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-13.jpg" id="img139" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-97.jpg" id="img140" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-177.jpg" id="img141" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-277.jpg" id="img142" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-369.jpg" id="img143" media-type="image/jpeg"/>	
+    <item href="images/9780007152520_interior-479.jpg" id="img144" media-type="image/jpeg"/>	
+    <item href="images/logo.jpg" id="img145" media-type="image/jpeg"/>  
+    <item href="images/p474-02.jpg" id="img146" media-type="image/jpeg"/>  
+    <item href="images/symbol.jpg" id="img147" media-type="image/jpeg"/>  
+    <item href="images/tick.jpg" id="img148" media-type="image/jpeg"/>  
+    <item href="images/Ximage.jpg" id="img149" media-type="image/jpeg"/> 
+    <item href="images/9780007152520_interior-250.jpg" id="img150" media-type="image/jpeg"/>	 
+    <item href="images/9780007152520_interior-224.jpg" id="img151" media-type="image/jpeg"/>	 
+    <item href="images/9780007152520_interior-482.jpg" id="img152" media-type="image/jpeg"/>	 
+    <item href="images/cover.jpg" id="cover-image" media-type="image/jpeg"/>                 
+	<item href="images/9780007375509_Cover.png" id="my-cover-image" media-type="image/png"/> 
+	
+    	</manifest>
+    <spine toc="ncx">             
+     <itemref idref="coverpage" linear="no"/>   
+	<itemref idref="titlepage" linear="yes"/>  
+	<itemref idref="dedication" linear="yes"/> 
+	<itemref idref="epigraph" linear="yes"/>   
+	<itemref idref="toc" linear="yes"/>        
+	<itemref idref="chapter1" linear="yes"/>   
+	<itemref idref="chapter2" linear="yes"/>   
+	<itemref idref="chapter3" linear="yes"/>   
+	<itemref idref="chapter4" linear="yes"/>   
+	<itemref idref="chapter5" linear="yes"/>   
+    <itemref idref="epilogue" linear="yes"/>
+    <itemref idref="whatisscience" linear="yes"/>
+    <itemref idref="glossary" linear="yes"/>
+    <itemref idref="furtherreading" linear="yes"/>
+    <itemref idref="index" linear="yes"/>
+    <itemref idref="ps" linear="yes"/>
+    <itemref idref="abouttheauthor1" linear="yes"/>
+    <itemref idref="aboutthebook" linear="yes"/>
+    <itemref idref="readon" linear="yes"/>
+    <itemref idref="acknowledgements" linear="yes"/>
+    <itemref idref="abouttheauthor2" linear="yes"/>
+    <itemref idref="praise" linear="yes"/>
+    <itemref idref="otherbooksby" linear="yes"/>
+    <itemref idref="copyright" linear="yes"/>
+    <itemref idref="aboutthepublisher" linear="yes"/>
+  </spine>
+<guide>
+<reference href="001-coverpage.html" title="Cover" type="cover-page"/>
+<reference href="024-copyright.html" title="Copyright" type="copyright-page"/>
+<reference href="005-toc.html" title="Contents" type="toc"/>
+<reference href="002-titlepage.html" title="Startup Page" type="start"/>
+</guide>
+</package>

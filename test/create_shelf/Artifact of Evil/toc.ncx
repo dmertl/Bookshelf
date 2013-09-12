@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="dffbb85b-4544-4c64-ad0e-6fc975072848" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (0.8.43)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Artifact of Evil</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="NavPoint-1" playOrder="1">
+      <navLabel>
+        <text>E. Gary Gygax Artifact of Evil Chapter 1</text>
+      </navLabel>
+      <content src="OEBPS/section1_split_000.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-2" playOrder="2">
+      <navLabel>
+        <text>Chapter 2</text>
+      </navLabel>
+      <content src="OEBPS/section2.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-3" playOrder="3">
+      <navLabel>
+        <text>Chapter 3</text>
+      </navLabel>
+      <content src="OEBPS/section3.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-4" playOrder="4">
+      <navLabel>
+        <text>Chapter 4</text>
+      </navLabel>
+      <content src="OEBPS/section4.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-5" playOrder="5">
+      <navLabel>
+        <text>Chapter 5</text>
+      </navLabel>
+      <content src="OEBPS/section5.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-6" playOrder="6">
+      <navLabel>
+        <text>Chapter 6</text>
+      </navLabel>
+      <content src="OEBPS/section6.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-7" playOrder="7">
+      <navLabel>
+        <text>Chapter 7</text>
+      </navLabel>
+      <content src="OEBPS/section7.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-8" playOrder="8">
+      <navLabel>
+        <text>Chapter 8</text>
+      </navLabel>
+      <content src="OEBPS/section8.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-9" playOrder="9">
+      <navLabel>
+        <text>Chapter 9</text>
+      </navLabel>
+      <content src="OEBPS/section9.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-10" playOrder="10">
+      <navLabel>
+        <text>Chapter 10</text>
+      </navLabel>
+      <content src="OEBPS/section10.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-11" playOrder="11">
+      <navLabel>
+        <text>Chapter 11</text>
+      </navLabel>
+      <content src="OEBPS/section11.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-12" playOrder="12">
+      <navLabel>
+        <text>Chapter 12</text>
+      </navLabel>
+      <content src="OEBPS/section12.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-13" playOrder="13">
+      <navLabel>
+        <text>Chapter 13</text>
+      </navLabel>
+      <content src="OEBPS/section13.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-14" playOrder="14">
+      <navLabel>
+        <text>Chapter 14</text>
+      </navLabel>
+      <content src="OEBPS/section14.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-15" playOrder="15">
+      <navLabel>
+        <text>Chapter 15</text>
+      </navLabel>
+      <content src="OEBPS/section15.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-16" playOrder="16">
+      <navLabel>
+        <text>Chapter 16</text>
+      </navLabel>
+      <content src="OEBPS/section16.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-17" playOrder="17">
+      <navLabel>
+        <text>Chapter 17</text>
+      </navLabel>
+      <content src="OEBPS/section17.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-18" playOrder="18">
+      <navLabel>
+        <text>Chapter 18</text>
+      </navLabel>
+      <content src="OEBPS/section18.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-19" playOrder="19">
+      <navLabel>
+        <text>Chapter 19</text>
+      </navLabel>
+      <content src="OEBPS/section19.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-20" playOrder="20">
+      <navLabel>
+        <text>Chapter 20</text>
+      </navLabel>
+      <content src="OEBPS/section20.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-21" playOrder="21">
+      <navLabel>
+        <text>Chapter 21</text>
+      </navLabel>
+      <content src="OEBPS/section21.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-22" playOrder="22">
+      <navLabel>
+        <text>Chapter 22</text>
+      </navLabel>
+      <content src="OEBPS/section22.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-23" playOrder="23">
+      <navLabel>
+        <text>Chapter 23</text>
+      </navLabel>
+      <content src="OEBPS/section23.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-24" playOrder="24">
+      <navLabel>
+        <text>Chapter 24</text>
+      </navLabel>
+      <content src="OEBPS/section24.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-25" playOrder="25">
+      <navLabel>
+        <text>Chapter 25</text>
+      </navLabel>
+      <content src="OEBPS/section25.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-26" playOrder="26">
+      <navLabel>
+        <text>Chapter 26</text>
+      </navLabel>
+      <content src="OEBPS/section26.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-27" playOrder="27">
+      <navLabel>
+        <text>Chapter 27</text>
+      </navLabel>
+      <content src="OEBPS/section27.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-28" playOrder="28">
+      <navLabel>
+        <text>Chapter 28</text>
+      </navLabel>
+      <content src="OEBPS/section28.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-29" playOrder="29">
+      <navLabel>
+        <text>Chapter 29</text>
+      </navLabel>
+      <content src="OEBPS/section29.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-30" playOrder="30">
+      <navLabel>
+        <text>Chapter 30</text>
+      </navLabel>
+      <content src="OEBPS/section30.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-31" playOrder="31">
+      <navLabel>
+        <text>Chapter 31</text>
+      </navLabel>
+      <content src="OEBPS/section31.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-32" playOrder="32">
+      <navLabel>
+        <text>Chapter 32</text>
+      </navLabel>
+      <content src="OEBPS/section32.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-33" playOrder="33">
+      <navLabel>
+        <text>Chapter 33</text>
+      </navLabel>
+      <content src="OEBPS/section33.xhtml"/>
+    </navPoint>
+    <navPoint class="chapter" id="NavPoint-34" playOrder="34">
+      <navLabel>
+        <text>Epilogue</text>
+      </navLabel>
+      <content src="OEBPS/section34.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC
+     "-//NISO//DTD ncx 2005-1//EN"
+     "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx version="2005-1"
+     xml:lang="en-US"
+     xmlns="http://www.daisy.org/z3986/2005/ncx/">
+
+   <head>
+
+      <meta name="dtb:uid" content="9780007375509"/>
+
+      <meta name="dtb:depth" content="1"/>
+
+      <meta name="dtb:totalPageCount" content="0"/>
+
+      <meta name="dtb:maxPageNumber" content="0"/>
+
+   </head>
+
+<docTitle><text>9780007152520</text></docTitle>
+
+<navMap>
+    <navPoint id="level0-id1" playOrder="1">
+         <navLabel><text>Cover</text></navLabel>
+         <content src="001-coverpage.html"/>
+      </navPoint>
+    <navPoint id="level0-id2" playOrder="2">
+         <navLabel><text>Title Page</text></navLabel>
+         <content src="002-titlepage.html"/>
+      </navPoint>
+    <navPoint id="level0-id3" playOrder="3">
+         <navLabel><text>Dedication</text></navLabel>
+         <content src="003-dedication.html"/>
+      </navPoint>
+    <navPoint id="level0-epigraph" playOrder="4">
+         <navLabel><text>Epigraph</text></navLabel>
+         <content src="004-epigraph.html"/>
+      </navPoint>
+    <navPoint id="level0-toc" playOrder="5">
+         <navLabel><text>Contents</text></navLabel>
+         <content src="005-toc.html"/>
+      </navPoint>
+    <navPoint id="level0-ch01" playOrder="6">
+         <navLabel><text>Chapter 1 In the Beginning</text></navLabel>
+         <content src="006-chapter1.html"/>
+      </navPoint>
+    <navPoint id="level0-ch02" playOrder="7">
+         <navLabel><text>Chapter 2 Theories of the Universe</text></navLabel>
+         <content src="007-chapter2.html"/>
+      </navPoint>
+    <navPoint id="level0-ch03" playOrder="8">
+         <navLabel><text>Chapter 3 The Great Debate</text></navLabel>
+         <content src="008-chapter3.html"/>
+      </navPoint>
+    <navPoint id="level0-ch04" playOrder="9">
+         <navLabel><text>Chapter 4 Mavericks of the Cosmos</text></navLabel>
+         <content src="009-chapter4.html"/>
+      </navPoint>
+    <navPoint id="level0-ch05" playOrder="10">
+         <navLabel><text>Chapter 5 The Paradigm Shift</text></navLabel>
+         <content src="010-chapter5.html"/>
+      </navPoint>
+    <navPoint id="level0-epilogue" playOrder="11">
+         <navLabel><text>Epilogue</text></navLabel>
+         <content src="011-epilogue.html"/>
+      </navPoint>
+    <navPoint id="level0-whatisscience" playOrder="12">
+         <navLabel><text>What is Science?</text></navLabel>
+         <content src="012-whatisscience.html"/>
+      </navPoint>
+    <navPoint id="level0-glossary" playOrder="13">
+         <navLabel><text>Glossary</text></navLabel>
+         <content src="013-glossary.html"/>
+      </navPoint>
+    <navPoint id="level0-furtherreading" playOrder="14">
+         <navLabel><text>Further Reading</text></navLabel>
+         <content src="014-furtherreading.html"/>
+      </navPoint>
+    <navPoint id="level0-index" playOrder="15">
+         <navLabel><text>Index</text></navLabel>
+         <content src="015-index.html"/>
+      </navPoint>
+    <navPoint id="level0-p1" playOrder="17">
+         <navLabel><text>P.S.</text></navLabel>
+         <content src="017-ps.html"/>
+    <navPoint id="level1-psabouttheauthor" playOrder="18">
+         <navLabel><text>About the author</text></navLabel>
+         <content src="018-abouttheauthor.html"/>
+      </navPoint>
+    <navPoint id="level1-aboutthebook" playOrder="19">
+         <navLabel><text>About the book</text></navLabel>
+         <content src="019-aboutthebook.html"/>
+      </navPoint>
+    <navPoint id="level1-readon" playOrder="20">
+         <navLabel><text>Read on</text></navLabel>
+         <content src="020-readon.html"/>
+      </navPoint>
+      </navPoint>
+    <navPoint id="level0-acknowledgements" playOrder="16">
+         <navLabel><text>Acknowledgements</text></navLabel>
+         <content src="016-acknowledgements.html"/>
+      </navPoint>
+    <navPoint id="level0-abouttheauthor" playOrder="21">
+         <navLabel><text>About the Author</text></navLabel>
+         <content src="021-abouttheauthor.html"/>
+      </navPoint>
+    <navPoint id="level0-praise" playOrder="22">
+         <navLabel><text>From the reviews of Big Bang:</text></navLabel>
+         <content src="022-praise.html"/>
+      </navPoint>
+    <navPoint id="level0-otherbooksby" playOrder="23">
+         <navLabel><text>By the same author</text></navLabel>
+         <content src="023-otherbooksby.html"/>
+      </navPoint>
+    <navPoint id="level0-copyright" playOrder="24">
+         <navLabel><text>Copyright</text></navLabel>
+         <content src="024-copyright.html"/>
+      </navPoint>
+    <navPoint id="level0-atp" playOrder="25">
+         <navLabel><text>About the Publisher</text></navLabel>
+         <content src="025-aboutthepublisher.html"/>
+      </navPoint>
+
+</navMap>
+</ncx>

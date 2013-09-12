@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>artistName</key>
+	<string>Paolo Bacigalupi</string>
+	<key>book-info</key>
+	<dict>
+		<key>PageProgression</key>
+		<string>default</string>
+		<key>cover-image-hash</key>
+		<string>C87FD43672F8E35130B4C626859B5F8C</string>
+		<key>cover-image-path</key>
+		<string>1597801348_Cover.jpg</string>
+		<key>mime-type</key>
+		<string>application/epub+zip</string>
+		<key>package-file-hash</key>
+		<string>E8D76FDD351E68D92AE4A3F3AEA7EC6A</string>
+		<key>publisher-unique-id</key>
+		<string>d54d5c81-5310-4873-884e-f17e11dba405</string>
+		<key>unique-id</key>
+		<integer>-7230471534008054954</integer>
+		<key>update-level</key>
+		<integer>2</integer>
+	</dict>
+	<key>genre</key>
+	<string>Science Fiction</string>
+	<key>itemName</key>
+	<string>Pump Six and Other Stories</string>
+	<key>playlistName</key>
+	<string>Pump Six and Other Stories</string>
+	<key>releaseDate</key>
+	<string>2009-11-01T04:00:00+00:00</string>
+	<key>sort-artist</key>
+	<string>Bacigalupi, Paolo</string>
+	<key>sort-artist-status</key>
+	<integer>3</integer>
+</dict>
+</plist>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-us">
+  <head>
+    <meta content="d54d5c81-5310-4873-884e-f17e11dba405" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (0.6.51)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Pump Six and Other Stories</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="e50d85ec-bb31-4300-b98b-ffe73b004a5f" playOrder="1">
+      <navLabel>
+        <text>Pocketful of Dharma</text>
+      </navLabel>
+      <content src="1597801348__p__split_003.htm"/>
+    </navPoint>
+    <navPoint id="d298a6ae-6174-424c-be18-f436f448cf20" playOrder="2">
+      <navLabel>
+        <text>The Fluted Girl</text>
+      </navLabel>
+      <content src="1597801348__p__split_004.htm"/>
+    </navPoint>
+    <navPoint id="763fef8e-388e-4609-b583-be3d3e5eb794" playOrder="3">
+      <navLabel>
+        <text>The People of Sand and Slag</text>
+      </navLabel>
+      <content src="1597801348__p__split_005.htm"/>
+    </navPoint>
+    <navPoint id="878354d3-0830-42be-b3da-19d08fb465f5" playOrder="4">
+      <navLabel>
+        <text>The Pasho</text>
+      </navLabel>
+      <content src="1597801348__p__split_006.htm"/>
+    </navPoint>
+    <navPoint id="198ef769-241e-416a-b87e-189327d0c5c8" playOrder="5">
+      <navLabel>
+        <text>The Calorie Man</text>
+      </navLabel>
+      <content src="1597801348__p__split_007.htm"/>
+    </navPoint>
+    <navPoint id="cc8c0674-8fa9-46f3-8e1b-54c483ab3983" playOrder="6">
+      <navLabel>
+        <text>The Tamarisk Hunter</text>
+      </navLabel>
+      <content src="1597801348__p__split_008.htm"/>
+    </navPoint>
+    <navPoint id="965cec74-d16b-40d7-8d13-130fe919fac4" playOrder="7">
+      <navLabel>
+        <text>Pop Squad</text>
+      </navLabel>
+      <content src="1597801348__p__split_009.htm"/>
+    </navPoint>
+    <navPoint id="e96b8c61-be56-437b-ad63-cc5f54f7d1fd" playOrder="8">
+      <navLabel>
+        <text>Yellow Card Man</text>
+      </navLabel>
+      <content src="1597801348__p__split_010.htm"/>
+    </navPoint>
+    <navPoint id="69f0ed90-98fb-42e7-9c7c-cfd524a35780" playOrder="9">
+      <navLabel>
+        <text>Softer</text>
+      </navLabel>
+      <content src="1597801348__p__split_011.htm"/>
+    </navPoint>
+    <navPoint id="dcf653c8-e02c-4340-b64b-bcbbf4dce3fc" playOrder="10">
+      <navLabel>
+        <text>Pump Six</text>
+      </navLabel>
+      <content src="1597801348__p__split_012.htm"/>
+    </navPoint>
+    <navPoint id="8b21d873-30e9-4ac8-b30f-5c43af4b5be8" playOrder="11">
+      <navLabel>
+        <text>Small Offerings</text>
+      </navLabel>
+      <content src="1597801348__p__split_013.htm"/>
+    </navPoint>
+  </navMap>
+</ncx>

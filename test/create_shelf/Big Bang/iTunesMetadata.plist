@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>artistName</key>
+	<string>Simon Singh</string>
+	<key>book-info</key>
+	<dict>
+		<key>cover-image-hash</key>
+		<string>E79A0DDC48127C200715092EB45BFC48</string>
+		<key>cover-image-path</key>
+		<string>OPS/images/9780007375509_Cover.png</string>
+		<key>mime-type</key>
+		<string>application/epub+zip</string>
+		<key>package-file-hash</key>
+		<string>8CD60A8DF8DF9CCFFFC99A5B635F6A46</string>
+		<key>publisher-unique-id</key>
+		<string>9780007375509</string>
+		<key>unique-id</key>
+		<integer>442209254169083196</integer>
+		<key>update-level</key>
+		<integer>2</integer>
+	</dict>
+	<key>itemName</key>
+	<string>Big Bang</string>
+	<key>playlistName</key>
+	<string>Big Bang</string>
+	<key>sort-artist</key>
+	<string>Simon Singh  </string>
+	<key>sort-artist-status</key>
+	<integer>3</integer>
+</dict>
+</plist>

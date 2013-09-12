@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:publisher>TSR</dc:publisher>
+    <meta name="calibre:series_index" content="2"/>
+    <meta name="calibre:title_sort" content="Artifact of Evil (gtr-3)"/>
+    <meta name="calibre:rating" content="8.00"/>
+    <dc:description>&lt;p class="description"&gt;Continues the Greyhawk adventures by portraying Gord's rise from humble beginnings to fame and fortune in the land of Greyhawk&lt;/p&gt;</dc:description>
+    <dc:language>en</dc:language>
+    <dc:creator opf:file-as="Gygax, Gary" opf:role="aut">Gary Gygax</dc:creator>
+    <meta name="calibre:timestamp" content="2012-04-02T16:26:14+00:00"/>
+    <dc:title>Artifact of Evil</dc:title>
+    <meta name="cover" content="cover"/>
+    <dc:date>1986-03-01T05:00:00+00:00</dc:date>
+    <meta name="calibre:series" content="Gord the Rogue"/>
+    <dc:contributor opf:role="bkp">calibre (0.8.43) [http://calibre-ebook.com]</dc:contributor>
+    <dc:identifier opf:scheme="URI">urn|uuid|fbd-b34bc9-e5a9-754c-bbb5-567c-34b3-d747f7</dc:identifier>
+    <dc:identifier opf:scheme="AMAZON">0880382791</dc:identifier>
+    <dc:identifier opf:scheme="GOOGLE">NPafGAAACAAJ</dc:identifier>
+    <dc:identifier opf:scheme="ISBN">9780880382793</dc:identifier>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">dffbb85b-4544-4c64-ad0e-6fc975072848</dc:identifier>
+    <dc:subject>sf_fantasy</dc:subject>
+  </metadata>
+  <manifest>
+    <item href="cover.jpeg" id="cover" media-type="image/jpeg"/>
+    <item href="OEBPS/about.xhtml" id="about" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/fb2info.xhtml" id="bookcontent35_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section10.xhtml" id="bookcontent10_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section11.xhtml" id="bookcontent11_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section12.xhtml" id="bookcontent12_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section13.xhtml" id="bookcontent13_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section14.xhtml" id="bookcontent14_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section15.xhtml" id="bookcontent15_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section16.xhtml" id="bookcontent16_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section17.xhtml" id="bookcontent17_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section18.xhtml" id="bookcontent18_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section19.xhtml" id="bookcontent19_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section1_split_000.xhtml" id="bookcontent1_02" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section1_split_001.xhtml" id="bookcontent1_01" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section2.xhtml" id="bookcontent2_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section20.xhtml" id="bookcontent20_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section21.xhtml" id="bookcontent21_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section22.xhtml" id="bookcontent22_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section23.xhtml" id="bookcontent23_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section24.xhtml" id="bookcontent24_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section25.xhtml" id="bookcontent25_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section26.xhtml" id="bookcontent26_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section27.xhtml" id="bookcontent27_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section28.xhtml" id="bookcontent28_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section29.xhtml" id="bookcontent29_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section3.xhtml" id="bookcontent3_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section30.xhtml" id="bookcontent30_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section31.xhtml" id="bookcontent31_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section32.xhtml" id="bookcontent32_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section33.xhtml" id="bookcontent33_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section34.xhtml" id="bookcontent34_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section4.xhtml" id="bookcontent4_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section5.xhtml" id="bookcontent5_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section6.xhtml" id="bookcontent6_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section7.xhtml" id="bookcontent7_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section8.xhtml" id="bookcontent8_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/section9.xhtml" id="bookcontent9_0" media-type="application/xhtml+xml"/>
+    <item href="OEBPS/title.xhtml" id="title" media-type="application/xhtml+xml"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" media-type="application/x-dtbncx+xml" id="ncx"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="title"/>
+    <itemref idref="bookcontent1_02"/>
+    <itemref idref="bookcontent1_01"/>
+    <itemref idref="bookcontent2_0"/>
+    <itemref idref="bookcontent3_0"/>
+    <itemref idref="bookcontent4_0"/>
+    <itemref idref="bookcontent5_0"/>
+    <itemref idref="bookcontent6_0"/>
+    <itemref idref="bookcontent7_0"/>
+    <itemref idref="bookcontent8_0"/>
+    <itemref idref="bookcontent9_0"/>
+    <itemref idref="bookcontent10_0"/>
+    <itemref idref="bookcontent11_0"/>
+    <itemref idref="bookcontent12_0"/>
+    <itemref idref="bookcontent13_0"/>
+    <itemref idref="bookcontent14_0"/>
+    <itemref idref="bookcontent15_0"/>
+    <itemref idref="bookcontent16_0"/>
+    <itemref idref="bookcontent17_0"/>
+    <itemref idref="bookcontent18_0"/>
+    <itemref idref="bookcontent19_0"/>
+    <itemref idref="bookcontent20_0"/>
+    <itemref idref="bookcontent21_0"/>
+    <itemref idref="bookcontent22_0"/>
+    <itemref idref="bookcontent23_0"/>
+    <itemref idref="bookcontent24_0"/>
+    <itemref idref="bookcontent25_0"/>
+    <itemref idref="bookcontent26_0"/>
+    <itemref idref="bookcontent27_0"/>
+    <itemref idref="bookcontent28_0"/>
+    <itemref idref="bookcontent29_0"/>
+    <itemref idref="bookcontent30_0"/>
+    <itemref idref="bookcontent31_0"/>
+    <itemref idref="bookcontent32_0"/>
+    <itemref idref="bookcontent33_0"/>
+    <itemref idref="bookcontent34_0"/>
+    <itemref idref="bookcontent35_0"/>
+    <itemref idref="about"/>
+  </spine>
+  <guide>
+    <reference href="titlepage.xhtml" type="cover" title="Cover"/>
+    <reference href="OEBPS/about.xhtml" type="copyright-page" title="about"/>
+    <reference href="OEBPS/title.xhtml" type="title-page" title="title"/>
+  </guide>
+</package>
