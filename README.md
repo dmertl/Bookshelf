@@ -1,5 +1,18 @@
 Bookshelf is a web based view of your ebook collection.
 
+# TODO #
+
+- get new OO organization working
+- organize into proper module (file is module, so import bookshelf.shelf.Book would be import the Book class in file bookshelf/shelf.py)
+- better coverage on alternate specifications for cover image
+- styling of shelf.xml XSLT is necessary for images
+- unit tests
+- test on more ebooks
+- some kind of alert or visibility into files with missing data
+- interactive elements with JS?
+- search for cover images that have no matching ebook and remove them
+- save time by not processing ebooks that have not been modified. store modified date or checksum
+
 # Key Features #
 
 - Browsable with only filesystem access (no web server or scripting language)
