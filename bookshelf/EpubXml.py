@@ -8,7 +8,8 @@ class EpubXml:
         self.ns = {
             'n': 'urn:oasis:names:tc:opendocument:xmlns:container',
             'pkg': 'http://www.idpf.org/2007/opf',
-            'dc': 'http://purl.org/dc/elements/1.1/'
+            'dc': 'http://purl.org/dc/elements/1.1/',
+            'opf': 'http://www.idpf.org/2007/opf'
         }
 
     def find(self, xpath):
@@ -24,7 +25,7 @@ class EpubXml:
         else:
             return None
 
-    def findDateValue(self, xpath):
+    def findDate(self, xpath):
         element = self.find(xpath)
         if element:
             return parser.parse(element.text)
@@ -33,7 +34,8 @@ class EpubXml:
 
     #TODO: better support for extracting elements that may not always have a key set
     #TODO: or handle with a special case for identifiers and assume uuid/isbn
-    def findDictValue(self, xpath, key_name):
+    #TODO: move complex finds into the converter, EpubXml only handles find for basic python types
+    def findDict(self, xpath, key_name):
         extracted = {}
         elements = self.findall(xpath)
         for e in elements:

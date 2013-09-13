@@ -4,7 +4,6 @@ import os
 
 class Book:
     def __init__(self):
-        print 'Book init'
         self.creator = None
         self.description = None
         self.filename = None

@@ -8,5 +8,5 @@ class Epub:
         self.filename = os.path.basename(path)
         self.zipfile = zipfile.ZipFile(path)
 
-    def readFile(self, file_path):
+    def read(self, file_path):
         return self.zipfile.read(file_path)
