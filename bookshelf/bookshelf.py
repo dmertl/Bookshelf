@@ -1,12 +1,43 @@
-from xml.etree import ElementTree as ET
 import os
+import magic
+import mimetypes
+from xml.etree import ElementTree as ET
+
+
+class Shelf:
+    def __init__(self, directory):
+        """
+
+        :param directory:
+        :type directory: str
+        """
+        self.directory = directory
+        self.xmlPath = os.path.join(directory, 'shelf.xml')
+        self.coversDir = os.path.join(directory, 'covers')
+
+        #TODO: may be better to make this an etree instead of an element?
+        self.xml = ET.Element('shelf')
+
+    def addBook(self, book):
+        """
+
+        :param book:
+        :type book: Book
+        """
+        self.xml.append(book.toXml())
+        if book.cover is not None:
+            book.writeCoverImage(self.coversDir)
+
+    def write(self):
+        tree = ET.ElementTree(self.xml)
+        tree.write(self.xmlPath)
 
 
 class Book:
-    def __init__(self):
+    def __init__(self, filename):
+        self.filename = filename
         self.creator = None
         self.description = None
-        self.filename = None
         self.language = None
         self.publishDate = None
         self.publisher = None
@@ -20,10 +51,11 @@ class Book:
         Convert book to XML for storage in shelf
 
         :return:
-        :rtype:
+        :rtype: Book
         """
         book = ET.Element('book')
 
+        #TODO use mapping functions/classes to handle XML conversion
         if self.creator:
             creator = ET.SubElement(book, 'creator')
             creator.text = self.creator
@@ -73,9 +105,7 @@ class Book:
         Write cover image to folder with filename matching book
 
         :param covers_dir:
-        :type covers_dir:
-        :return:
-        :rtype:
+        :type covers_dir: str
         """
         cover_filename = self.getCoverFilename()
         if not os.path.exists(covers_dir):
@@ -84,4 +114,49 @@ class Book:
         self.cover.write(cover_path)
 
     def getCoverFilename(self):
-        return os.path.splitext(self.filename)[0] + os.path.splitext(os.path.basename(self.cover.href))[1]
+        """
+        :return:
+        :retype: str
+        """
+        return os.path.splitext(self.filename)[0] + self.cover.extension
+
+
+class Cover:
+    mimeTypeExtensions = {
+        'image/jpeg': '.jpg',
+        'image/png': '.png'
+    }
+
+    def __init__(self, data):
+        """
+
+        :param data:
+        :type data: str
+        """
+        self.data = data
+        self.mediaType = magic.from_buffer(data, mime=True)
+        self.extension = self.guess_extension(self.mediaType)
+
+    def write(self, path):
+        """
+
+        :param path:
+        :type path: str
+        """
+        fh = open(path, 'w+')
+        fh.write(self.data)
+        fh.close()
+
+    def guess_extension(self, mime_type):
+        """
+        Guess extension from mime type, preferring local dictionary over mimetypes module
+
+        :param mime_type:
+        :type mime_type: str
+        :return:
+        :rtype: str
+        """
+        if mime_type in Cover.mimeTypeExtensions:
+            return Cover.mimeTypeExtensions[mime_type]
+        else:
+            return mimetypes.guess_extension(mime_type)
