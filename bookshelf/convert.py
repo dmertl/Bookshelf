@@ -54,6 +54,7 @@ class EpubBookConverter:
                 'key': '{http://www.idpf.org/2007/opf}scheme',
                 'default_key': 'uuid'
             },
+            #TODO: convert all fields to new cover style configuration, make some kind of default for rootfile and single extractor
             'cover': {
                 'converter': EpubCoverConverter,
                 'sources': [
