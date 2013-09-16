@@ -7,68 +7,64 @@ class EpubBookConverter:
     def __init__(self):
         self.map = {
             'creator': {
-                'converter': EpubTextConverter,
-                'paths': [
+                'sources': [
                     'opf:metadata/dc:creator'
                 ]
             },
             'description': {
-                'converter': EpubTextConverter,
-                'paths': [
+                'sources': [
                     'opf:metadata/dc:description'
                 ]
             },
             'language': {
-                'converter': EpubTextConverter,
-                'paths': [
+                'sources': [
                     'opf:metadata/dc:language'
                 ]
             },
             'publishDate': {
-                'converter': EpubDateConverter,
-                'paths': [
+                'extractor': RootfileDateExtractor,
+                'sources': [
                     'opf:metadata/dc:date'
                 ]
             },
             'publisher': {
-                'converter': EpubTextConverter,
-                'paths': [
+                'sources': [
                     'opf:metadata/dc:publisher'
                 ]
             },
             'subject': {
-                'converter': EpubTextConverter,
-                'paths': [
+                'sources': [
                     'opf:metadata/dc:subject'
                 ]},
             'title': {
-                'converter': EpubTextConverter,
-                'paths': [
+                'sources': [
                     'opf:metadata/dc:title'
                 ]},
             'identifiers': {
-                'converter': EpubDictConverter,
-                'paths': [
-                    'opf:metadata/dc:identifier'
-                ],
-                'key': '{http://www.idpf.org/2007/opf}scheme',
-                'default_key': 'uuid'
-            },
-            #TODO: convert all fields to new cover style configuration, make some kind of default for rootfile and single extractor
-            'cover': {
-                'converter': EpubCoverConverter,
+                'extractor': RootfileDictExtractor,
                 'sources': [
                     {
-                        'extractor': ITunesCoverExtractor,
-                        'path': 'iTunesArtwork'
+                        'paths': [
+                            'opf:metadata/dc:identifier'
+                        ],
+                        'key': '{http://www.idpf.org/2007/opf}scheme'
+                    }
+                ]
+            },
+            'cover': {
+                'sources': [
+                    {
+                        'extractor': FileCoverExtractor,
+                        'paths': [
+                            'iTunesArtwork'
+                        ]
                     },
                     {
                         'extractor': RootfileCoverExtractor,
-                        'path': 'opf:manifest/pkg:item/[@id="cover"]',
-                    },
-                    {
-                        'extractor': RootfileCoverExtractor,
-                        'path': 'opf:manifest/pkg:item/[@id="cover-image"]',
+                        'paths': [
+                            'opf:manifest/pkg:item/[@id="cover"]',
+                            'opf:manifest/pkg:item/[@id="cover-image"]'
+                        ]
                     }
                 ]
             }
@@ -86,122 +82,113 @@ class EpubBookConverter:
         # Create Book
         book = Book(epub.filename)
 
-        # Map epub data to Book
+        # Map epub data to Book fields
         for field, mapping in self.map.iteritems():
-            value = getattr(mapping['converter'], 'convert')(epub, mapping)
+            value = self.getMappedValue(epub, mapping)
             if value is not None:
                 setattr(book, field, value)
-
         return book
 
+    def getMappedValue(self, epub, mapping):
+        # Set default extractor
+        if 'extractor' in mapping:
+            default_extractor = mapping['extractor']
+        else:
+            default_extractor = RootfileTextExtractor
+        # Extract sources until one is successful
+        for source in mapping['sources']:
+            extracted = self.extractSource(epub, source, default_extractor)
+            if extracted is not None:
+                return extracted
+        return None
 
-class EpubTextConverter:
+    def extractSource(self, epub, source, default_extractor):
+        # Use default extractor if no source specific extractor specified
+        if type(source) is str:
+            source = {
+                'paths': [source]
+            }
+        if 'extractor' not in source:
+            source['extractor'] = default_extractor
+        # Attempt to extract field value from epub using source
+        return source['extractor'].extract(epub, source)
 
+
+class RootfileTextExtractor:
     @staticmethod
-    def convert(epub, mapping):
-        """
-        :param epub:
-        :type epub: epub.Epub
-        :param mapping:
-        :type mapping: dict
-        :return:
-        :rtype: str
-        """
-        found = epub.rootfile.findInPaths(mapping['paths'])
-        if found is not None:
-            return found.text
+    def extract(epub, settings):
+        element = epub.rootfile.findInPaths(settings['paths'])
+        if element is not None:
+            return element.text
         return None
 
 
-class EpubDateConverter:
-
+class RootfileDateExtractor:
     @staticmethod
-    def convert(epub, mapping):
-        """
-
-        :param epub:
-        :type epub: epub.Epub
-        :param mapping:
-        :type mapping: dict
-        :return:
-        :rtype: datetime.datetime
-        """
-        found = epub.rootfile.findInPaths(mapping['paths'])
-        if found is not None:
-            return parser.parse(found.text)
+    def extract(epub, settings):
+        element = epub.rootfile.findInPaths(settings['paths'])
+        if element is not None:
+            return parser.parse(element.text)
         return None
 
 
-class EpubDictConverter:
-
+class RootfileDictExtractor:
     @staticmethod
-    def convert(epub, mapping):
-        """
-
-        :param epub:
-        :type epub: epub.Epub
-        :param mapping:
-        :type mapping: dict
-        :return:
-        :rtype: dict
-        """
+    def extract(epub, settings):
         extracted = {}
-        found = epub.rootfile.findallInPaths(mapping['paths'])
-        if found is not None:
-            for element in found:
-                #TODO: if key is not found should create an XML element with no scheme in it, but allow for multiple with no key
-                key = element.get(mapping['key'])
+        elements = epub.rootfile.findallInPaths(settings['paths'])
+        if elements is not None:
+            for element in elements:
+                key = element.get(settings['key'])
                 if not key:
-                    if 'default_key' in mapping:
-                        key = mapping['default_key']
-                    else:
-                        key = ''
+                    key = ''
                 extracted[key] = element.text
         return extracted
 
-"""
-Other cover cases to handle:
-<meta content="my-cover-image" name="cover"/> pointing to <item href="images/9780007375509_Cover.png" id="my-cover-image" media-type="image/png"/>
-<meta name="cover" content="RW_1597801348_Cover"/> pointing to <item href="1597801348_Cover.jpg" id="RW_1597801348_Cover" media-type="image/jpeg"/>
-"""
-class EpubCoverConverter:
 
-    @staticmethod
-    def convert(epub, mapping):
-        """
-
-        :param epub:
-        :type epub: epub.Epub
-        :param mapping:
-        :type mapping: dict
-        :return:
-        :rtype: Cover
-        """
-        for source in mapping['sources']:
-            found = source['extractor'].extract(epub, source)
-            if found is not None:
-                return found
-        return None
-
-
-#TODO: separate search vs. extract responsibilities.
-# Search classes should detect presence of desired data in epub and return a dict of all necessary info
-# Extractor classes should take search dict and convert into bookshelf class / data
 class RootfileCoverExtractor:
     @staticmethod
     def extract(epub, settings):
-        cover_element = epub.rootfile.find(settings['path'])
-        if cover_element is not None:
-            return Cover(epub.read(cover_element.get('href')))
+        for path in settings['paths']:
+            element = epub.rootfile.find(path)
+            if element is not None:
+                try:
+                    return Cover(epub.read(element.get('href')))
+                except KeyError:
+                    continue
         return None
 
 
-class ITunesCoverExtractor:
+class RootfileLinkedCoverExtractor:
+    @staticmethod
+    def extract(epub, settings):
+        for path in settings['paths']:
+            meta = epub.rootfile.find(path)
+            if meta is not None:
+                linked = epub.rootfile.find('[@id="{}"]'.format(meta.get('content')))
+                if linked is not None:
+                    try:
+                        return Cover(epub.read(linked.get('href')))
+                    except KeyError:
+                        continue
+        return None
+
+
+class FileDataExtractor:
+    @staticmethod
+    def extract(epub, settings):
+        for path in settings['paths']:
+            try:
+                return epub.read(path)
+            except KeyError:
+                continue
+        return None
+
+
+class FileCoverExtractor:
     @staticmethod
     def extract(epub, settings):
         try:
-            cover_data = epub.read('iTunesArtwork')
-            return Cover(cover_data)
+            return Cover(epub.readFirstInPaths(epub, settings['paths']))
         except KeyError:
-            # iTunesArtwork file not present
             return None

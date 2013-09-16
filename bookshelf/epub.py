@@ -29,6 +29,21 @@ class Epub:
         """
         return self.zipfile.read(file_path)
 
+    def readFirstInPaths(self, file_paths):
+        """
+
+        :param file_paths:
+        :type file_paths: list
+        :return:
+        :rtype: str
+        """
+        for path in file_paths:
+            try:
+                return self.read(path)
+            except KeyError:
+                continue
+        raise KeyError
+
     def _getContainer(self):
         """
 

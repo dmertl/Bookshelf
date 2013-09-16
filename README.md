@@ -2,12 +2,9 @@ Bookshelf is a web based view of your ebook collection.
 
 # TODO #
 
-- get new OO organization working
-- organize into proper module (file is module, so import bookshelf.shelf.Book would be import the Book class in file bookshelf/shelf.py)
-- better coverage on alternate specifications for cover image
-- styling of shelf.xml XSLT is necessary for images
-- unit tests
+- Output HTML instead of XML, can't load XSLT from local file
 - test on more ebooks
+- unit tests
 - some kind of alert or visibility into files with missing data
 - interactive elements with JS?
 - search for cover images that have no matching ebook and remove them

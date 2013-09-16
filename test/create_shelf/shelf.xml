@@ -1,1 +1,63 @@
-<shelf><book><creator>Gary Gygax</creator><description>&lt;p class="description"&gt;Continues the Greyhawk adventures by portraying Gord's rise from humble beginnings to fame and fortune in the land of Greyhawk&lt;/p&gt;</description><language>en</language><publishDate>1986-03-01T05:00:00+00:00</publishDate><publisher>TSR</publisher><subject>sf_fantasy</subject><title>Artifact of Evil</title><identifiers><identifier scheme="AMAZON">0880382791</identifier><identifier scheme="GOOGLE">NPafGAAACAAJ</identifier><identifier scheme="ISBN">9780880382793</identifier><identifier scheme="URI">urn|uuid|fbd-b34bc9-e5a9-754c-bbb5-567c-34b3-d747f7</identifier><identifier scheme="uuid">dffbb85b-4544-4c64-ad0e-6fc975072848</identifier></identifiers><cover href="covers/Artifact of Evil.jpg" media-type="image/jpeg" /></book><book><creator>Simon Singh</creator><description>The bestselling author of Fermat?s Last Theorem and The Code Book tells the story of the brilliant minds that deciphered the mysteries of the Big Bang. A fascinating exploration of the ultimate question: how was our universe created? Albert Einstein once said: ?The most incomprehensible thing about the universe is that it is comprehensible.? Simon Singh believes geniuses like Einstein are not the only people able to grasp the physics that govern the universe. We all can. As well as explaining what the Big Bang theory actually is and why cosmologists believe it is an accurate description of the origins of the universe, this book is also the fascinating story of the scientists who fought against the established idea of an eternal and unchanging universe. Simon Singh, renowned for making difficult ideas much less daunting than they first seem, is the perfect guide for this journey. Everybody has heard of the Big Bang Theory. But how many of us can actually claim to understand it?...</description><language>en-US</language><publisher>HarperCollins Publishers</publisher><title>Big Bang</title><identifiers><identifier scheme="isbn">9780007375509</identifier></identifiers><cover href="covers/Big Bang.png" media-type="image/png" /></book><book><creator>Michael Moorcock</creator><language>en</language><title>Elric of Melnibone</title><identifiers><identifier scheme="uuid">urn:uuid:id_20130115200124</identifier></identifiers><cover href="covers/Elric of Melnibone.png" media-type="image/png" /></book><book><creator>Paolo Bacigalupi</creator><language>en-us</language><publishDate>2009-11-01T04:00:00+00:00</publishDate><publisher>Night Shade</publisher><subject>Science Fiction</subject><title>Pump Six and Other Stories</title><identifiers><identifier scheme="ISBN">1-59780-134-8</identifier><identifier scheme="uuid">d54d5c81-5310-4873-884e-f17e11dba405</identifier></identifiers></book></shelf>
+<?xml-stylesheet type="text/xsl" href="shelf.xsl"?>
+<shelf>
+    <book>
+        <creator>Gary Gygax</creator>
+        <description>&lt;p class="description"&gt;Continues the Greyhawk adventures by portraying Gord's rise from
+            humble beginnings to fame and fortune in the land of Greyhawk&lt;/p&gt;</description>
+        <language>en</language>
+        <publishDate>1986-03-01T05:00:00+00:00</publishDate>
+        <publisher>TSR</publisher>
+        <subject>sf_fantasy</subject>
+        <title>Artifact of Evil</title>
+        <identifiers>
+            <identifier scheme="AMAZON">0880382791</identifier>
+            <identifier scheme="GOOGLE">NPafGAAACAAJ</identifier>
+            <identifier scheme="ISBN">9780880382793</identifier>
+            <identifier scheme="URI">urn|uuid|fbd-b34bc9-e5a9-754c-bbb5-567c-34b3-d747f7</identifier>
+            <identifier scheme="uuid">dffbb85b-4544-4c64-ad0e-6fc975072848</identifier>
+        </identifiers>
+        <cover href="covers/Artifact of Evil.jpg" media-type="image/jpeg"/>
+    </book>
+    <book>
+        <creator>Simon Singh</creator>
+        <description>The bestselling author of Fermat?s Last Theorem and The Code Book tells the story of the brilliant
+            minds that deciphered the mysteries of the Big Bang. A fascinating exploration of the ultimate question: how
+            was our universe created? Albert Einstein once said: ?The most incomprehensible thing about the universe is
+            that it is comprehensible.? Simon Singh believes geniuses like Einstein are not the only people able to
+            grasp the physics that govern the universe. We all can. As well as explaining what the Big Bang theory
+            actually is and why cosmologists believe it is an accurate description of the origins of the universe, this
+            book is also the fascinating story of the scientists who fought against the established idea of an eternal
+            and unchanging universe. Simon Singh, renowned for making difficult ideas much less daunting than they first
+            seem, is the perfect guide for this journey. Everybody has heard of the Big Bang Theory. But how many of us
+            can actually claim to understand it?...
+        </description>
+        <language>en-US</language>
+        <publisher>HarperCollins Publishers</publisher>
+        <title>Big Bang</title>
+        <identifiers>
+            <identifier scheme="isbn">9780007375509</identifier>
+        </identifiers>
+        <cover href="covers/Big Bang.png" media-type="image/png"/>
+    </book>
+    <book>
+        <creator>Michael Moorcock</creator>
+        <language>en</language>
+        <title>Elric of Melnibone</title>
+        <identifiers>
+            <identifier>urn:uuid:id_20130115200124</identifier>
+        </identifiers>
+        <cover href="covers/Elric of Melnibone.png" media-type="image/png"/>
+    </book>
+    <book>
+        <creator>Paolo Bacigalupi</creator>
+        <language>en-us</language>
+        <publishDate>2009-11-01T04:00:00+00:00</publishDate>
+        <publisher>Night Shade</publisher>
+        <subject>Science Fiction</subject>
+        <title>Pump Six and Other Stories</title>
+        <identifiers>
+            <identifier scheme="ISBN">1-59780-134-8</identifier>
+            <identifier scheme="uuid">d54d5c81-5310-4873-884e-f17e11dba405</identifier>
+        </identifiers>
+    </book>
+</shelf>
