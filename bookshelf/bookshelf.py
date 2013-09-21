@@ -12,11 +12,12 @@ class Shelf:
         :type directory: str
         """
         self.directory = directory
-        self.xmlPath = os.path.join(directory, 'shelf.xml')
+        self.xmlPath = os.path.join(directory, 'index.html')
         self.coversDir = os.path.join(directory, 'covers')
 
-        #TODO: may be better to make this an etree instead of an element?
-        self.xml = ET.Element('shelf')
+        # Initialize book shelf element
+        self.xml = ET.Element('ul')
+        self.xml.set('class', 'shelf')
 
     def addBook(self, book):
         """
@@ -24,12 +25,20 @@ class Shelf:
         :param book:
         :type book: Book
         """
-        self.xml.append(book.toXml())
+        self.xml.append(book.toHtml())
         if book.cover is not None:
             book.writeCoverImage(self.coversDir)
 
     def write(self):
-        tree = ET.ElementTree(self.xml)
+        html = ET.Element('html')
+        head = ET.SubElement(html, 'head')
+        link = ET.SubElement(head, 'link')
+        link.set('rel', 'stylesheet')
+        link.set('type', 'text/css')
+        link.set('href', 'shelf.css')
+        body = ET.SubElement(html, 'body')
+        body.append(self.xml)
+        tree = ET.ElementTree(html)
         tree.write(self.xmlPath)
 
 
@@ -46,57 +55,61 @@ class Book:
         self.identifiers = {}
         self.cover = None
 
-    def toXml(self):
+    def toHtml(self):
         """
-        Convert book to XML for storage in shelf
+        Convert book to HTML for storage in shelf
 
         :return:
         :rtype: Book
         """
-        book = ET.Element('book')
+        book = ET.Element('li')
+        book.set('class', 'book')
 
-        #TODO use mapping functions/classes to handle XML conversion
-        if self.creator:
-            creator = ET.SubElement(book, 'creator')
-            creator.text = self.creator
+        link = ET.SubElement(book, 'a')
+        link.set('href', self.filename)
 
-        if self.description:
-            description = ET.SubElement(book, 'description')
-            description.text = self.description
+        cover = ET.SubElement(link, 'img')
+        cover.set('class', 'cover')
+        if self.cover:
+            cover.set('src', os.path.join('covers', self.getCoverFilename()))
 
-        if self.language:
-            language = ET.SubElement(book, 'language')
-            language.text = self.language
-
-        if self.publishDate:
-            publishDate = ET.SubElement(book, 'publishDate')
-            publishDate.text = self.publishDate.isoformat()
-
-        if self.publisher:
-            publisher = ET.SubElement(book, 'publisher')
-            publisher.text = self.publisher
-
-        if self.subject:
-            subject = ET.SubElement(book, 'subject')
-            subject.text = self.subject
-
+        title = ET.SubElement(book, 'h2')
+        title.set('class', 'title')
         if self.title:
-            title = ET.SubElement(book, 'title')
             title.text = self.title
 
-        identifiers = ET.SubElement(book, 'identifiers')
-        if self.identifiers:
-            for scheme, i in self.identifiers.iteritems():
-                identifier = ET.SubElement(identifiers, 'identifier')
-                identifier.text = i
-                if scheme != '':
-                    identifier.set('scheme', scheme)
+        author = ET.SubElement(book, 'h3')
+        author.set('class', 'author')
+        if self.creator:
+            author.text = self.creator
 
-        if self.cover:
-            cover = ET.SubElement(book, 'cover')
-            cover_filename = self.getCoverFilename()
-            cover.set('href', os.path.join('covers', cover_filename))
-            cover.set('media-type', self.cover.mediaType)
+        # if self.description:
+        #     description = ET.SubElement(book, 'description')
+        #     description.text = self.description
+        #
+        # if self.language:
+        #     language = ET.SubElement(book, 'language')
+        #     language.text = self.language
+        #
+        # if self.publishDate:
+        #     publishDate = ET.SubElement(book, 'publishDate')
+        #     publishDate.text = self.publishDate.isoformat()
+        #
+        # if self.publisher:
+        #     publisher = ET.SubElement(book, 'publisher')
+        #     publisher.text = self.publisher
+        #
+        # if self.subject:
+        #     subject = ET.SubElement(book, 'subject')
+        #     subject.text = self.subject
+        #
+        # identifiers = ET.SubElement(book, 'identifiers')
+        # if self.identifiers:
+        #     for scheme, i in self.identifiers.iteritems():
+        #         identifier = ET.SubElement(identifiers, 'identifier')
+        #         identifier.text = i
+        #         if scheme != '':
+        #             identifier.set('scheme', scheme)
 
         return book
 

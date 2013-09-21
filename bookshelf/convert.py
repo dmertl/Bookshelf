@@ -189,6 +189,6 @@ class FileCoverExtractor:
     @staticmethod
     def extract(epub, settings):
         try:
-            return Cover(epub.readFirstInPaths(epub, settings['paths']))
+            return Cover(epub.readFirstInPaths(settings['paths']))
         except KeyError:
             return None
