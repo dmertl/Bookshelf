@@ -30,12 +30,14 @@ class Shelf:
             book.writeCoverImage(self.coversDir)
 
     def write(self):
+        # Generate HTML header
         html = ET.Element('html')
         head = ET.SubElement(html, 'head')
         link = ET.SubElement(head, 'link')
         link.set('rel', 'stylesheet')
         link.set('type', 'text/css')
         link.set('href', 'shelf.css')
+        # Generate HTML body
         body = ET.SubElement(html, 'body')
         body.append(self.xml)
         tree = ET.ElementTree(html)

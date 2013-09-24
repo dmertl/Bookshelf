@@ -1,6 +1,7 @@
 .shelf {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 100;
+    padding: 0;
 }
 .shelf .book {
     width: 110px;
@@ -11,7 +12,7 @@
 }
 .shelf .book .cover {
     width: 110px;
-    /* TODO: wrap in div to crap rather than stretch */
+    /* TODO: wrap in div to crop rather than stretch */
     height: 150px;
 }
 .shelf .book .title,
@@ -26,5 +27,25 @@
     font-weight: bold;
 }
 .shelf .book .author {
+    font-style: italic;
+}
+
+/* Extended Book Details Panel */
+.book_extended {
+    display: none;
+    position: absolute;
+    top: 0;
+    border: solid 2px #333;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    box-shadow: #000 0 0 10px;
+    background-color: #FFF;
+}
+.book_extended h2,
+.book_extended h3 {
+    margin: 0;
+}
+.book_extended h3 {
     font-style: italic;
 }

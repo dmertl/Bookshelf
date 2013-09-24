@@ -3,6 +3,7 @@ Bookshelf is a web based view of your ebook collection.
 # TODO #
 
 - Test on more ebooks
+- Add unique ID to each ebook (ISBN or uuid from epub if available, otherwise generate new uuid)
 - Mouseover book for expanded pop-up with larger image and more info
 - Search and sorting
 - Unit tests
