@@ -2,13 +2,16 @@ Bookshelf is a web based view of your ebook collection.
 
 # TODO #
 
-- Output HTML instead of XML, can't load XSLT from local file
-- test on more ebooks
-- unit tests
-- some kind of alert or visibility into files with missing data
-- interactive elements with JS?
-- search for cover images that have no matching ebook and remove them
-- save time by not processing ebooks that have not been modified. store modified date or checksum
+- Test on more ebooks
+- Mouseover book for expanded pop-up with larger image and more info
+- Search and sorting
+- Unit tests
+- Ability to parse epubs in a containing folder
+- Display shelf name and a link to parent directory
+- Alert on missing information
+- Admin area to fill in missing information and pick images
+- Search for cover images that have no matching ebook and remove them
+- Save time by not processing ebooks that have not been modified. store modified date or checksum
 
 # Key Features #
 

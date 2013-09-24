@@ -65,6 +65,12 @@ class EpubBookConverter:
                             'opf:manifest/pkg:item/[@id="cover"]',
                             'opf:manifest/pkg:item/[@id="cover-image"]'
                         ]
+                    },
+                    {
+                        'extractor': RootfileLinkedCoverExtractor,
+                        'paths': [
+                            'opf:metadata/opf:meta/[@name="cover"]'
+                        ]
                     }
                 ]
             }
@@ -165,7 +171,7 @@ class RootfileLinkedCoverExtractor:
         for path in settings['paths']:
             meta = epub.rootfile.find(path)
             if meta is not None:
-                linked = epub.rootfile.find('[@id="{}"]'.format(meta.get('content')))
+                linked = epub.rootfile.find('.//*/[@id="{}"]'.format(meta.get('content')))
                 if linked is not None:
                     try:
                         return Cover(epub.read(linked.get('href')))
