@@ -3,12 +3,14 @@ Bookshelf is a web based view of your ebook collection.
 # TODO #
 
 - Test on more ebooks
+- Dump shelf to JSON
 - Mouseover book for expanded pop-up with larger image and more info
 - Search and sorting
 - Unit tests
 - Ability to parse epubs in a containing folder
 - Display shelf name and a link to parent directory
 - Alert on missing information
+- Separate bookshelf and HTML outputting of bookshelf
 - Admin area to fill in missing information and pick images
 - Search for cover images that have no matching ebook and remove them
 - Save time by not processing ebooks that have not been modified. store modified date or checksum
