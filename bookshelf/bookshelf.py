@@ -1,6 +1,7 @@
 import os
 import magic
 import mimetypes
+import uuid
 from xml.etree import ElementTree as ET
 
 
@@ -66,6 +67,7 @@ class Book:
         """
         book = ET.Element('li')
         book.set('class', 'book')
+        book.set('id', 'book_{}'.format(self.getUuid()))
 
         link = ET.SubElement(book, 'a')
         link.set('href', self.filename)
@@ -131,9 +133,19 @@ class Book:
     def getCoverFilename(self):
         """
         :return:
-        :retype: str
+        :rtype: str
         """
         return os.path.splitext(self.filename)[0] + self.cover.extension
+
+    def getUuid(self):
+        """
+        :return: A unique identifier for the book. Uses ISBN if available.
+        :rtype: str
+        """
+        if self.identifiers and 'ISBN' in self.identifiers:
+            return self.identifiers['ISBN']
+        else:
+            return uuid.uuid1()
 
 
 class Cover:

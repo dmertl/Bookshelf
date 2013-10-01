@@ -4,7 +4,7 @@
     padding: 0;
 }
 .shelf .book {
-    width: 110px;
+    width: 112px;
     height: 190px;
     overflow: hidden;
     float: left;
@@ -14,6 +14,7 @@
     width: 110px;
     /* TODO: wrap in div to crop rather than stretch */
     height: 150px;
+    border: solid 1px #CCC;
 }
 .shelf .book .title,
 .shelf .book .author {
