@@ -17,6 +17,7 @@ class Epub:
 
         #Initialize epub metadata
         self.container = self._getContainer()
+        self.rootfile_path = self._getRootfilePath()
         self.rootfile = self._getRootfile()
 
     def read(self, file_path):
@@ -52,13 +53,20 @@ class Epub:
         """
         return EpubXml(self.read('META-INF/container.xml'))
 
+    def _getRootfilePath(self):
+        """
+        :return:
+        :rtype: str
+        """
+        return self.container.find('n:rootfiles/n:rootfile').get('full-path')
+
     def _getRootfile(self):
         """
 
         :return:
         :rtype: EpubXml
         """
-        return EpubXml(self.read(self.container.find('n:rootfiles/n:rootfile').get('full-path')))
+        return EpubXml(self.read(self.rootfile_path))
 
 
 class EpubXml:

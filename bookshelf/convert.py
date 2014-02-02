@@ -1,3 +1,4 @@
+import os.path
 from bookshelf import Book
 from bookshelf import Cover
 from dateutil import parser
@@ -119,8 +120,10 @@ class EpubBookConverter:
         # Attempt to extract field value from epub using source
         return source['extractor'].extract(epub, source)
 
+class Extractor(object):
+    pass
 
-class RootfileTextExtractor:
+class RootfileTextExtractor(Extractor):
     @staticmethod
     def extract(epub, settings):
         element = epub.rootfile.findInPaths(settings['paths'])
@@ -129,7 +132,7 @@ class RootfileTextExtractor:
         return None
 
 
-class RootfileDateExtractor:
+class RootfileDateExtractor(Extractor):
     @staticmethod
     def extract(epub, settings):
         element = epub.rootfile.findInPaths(settings['paths'])
@@ -138,7 +141,7 @@ class RootfileDateExtractor:
         return None
 
 
-class RootfileDictExtractor:
+class RootfileDictExtractor(Extractor):
     @staticmethod
     def extract(epub, settings):
         extracted = {}
@@ -152,32 +155,60 @@ class RootfileDictExtractor:
         return extracted
 
 
-class RootfileCoverExtractor:
-    @staticmethod
-    def extract(epub, settings):
+class RootfileCoverExtractor(Extractor):
+    """
+    Extract a cover image from an element in the root file. Retrieves the element by path and uses the href attribute
+    as the path to the image.
+    """
+    @classmethod
+    def extract(cls, epub, settings):
         for path in settings['paths']:
-            element = epub.rootfile.find(path)
-            if element is not None:
-                try:
-                    return Cover(epub.read(element.get('href')))
-                except KeyError:
-                    continue
+            try:
+                return cls._extract(epub, path)
+            except ExtractError:
+                continue
         return None
 
+    @classmethod
+    def _extract(cls, epub, path):
+        element = epub.rootfile.find(path)
+        if element is not None:
+            try:
+                return Cover(cls._read_file(epub, element.get('href')))
+            except KeyError:
+                raise ExtractError
 
-class RootfileLinkedCoverExtractor:
-    @staticmethod
-    def extract(epub, settings):
-        for path in settings['paths']:
-            meta = epub.rootfile.find(path)
-            if meta is not None:
-                linked = epub.rootfile.find('.//*/[@id="{}"]'.format(meta.get('content')))
-                if linked is not None:
-                    try:
-                        return Cover(epub.read(linked.get('href')))
-                    except KeyError:
-                        continue
-        return None
+    @classmethod
+    def _read_file(cls, epub, path):
+        """
+        Read a file relative to the rootfile
+        """
+        return epub.read(cls._rootfile_path(epub, path))
+
+    @classmethod
+    def _rootfile_path(cls, epub, path):
+        """
+        Get a rootfile relative path
+        :rtype: str
+        """
+        return os.path.join(os.path.dirname(epub.rootfile_path), path)
+
+
+class RootfileLinkedCoverExtractor(RootfileCoverExtractor):
+    """
+    Extracts a cover image from an element in the root file. The identifiable element links to an element with the image
+    path. Retrieves the linking element by settings path and grabs that element's content attribute as the id of the
+    element holding the image path. Then retrieves that linked element and gets the href which is a path to the file.
+    """
+    @classmethod
+    def _extract(cls, epub, path):
+        """
+        Extract cover when path is via linking element's content attribute
+        """
+        linker = epub.rootfile.find(path)
+        if linker is not None:
+            linked_path = './/*/[@id="{}"]'.format(linker.get('content'))
+            return super(RootfileLinkedCoverExtractor, cls)._extract(epub, linked_path)
 
 
 class FileDataExtractor:
@@ -198,3 +229,7 @@ class FileCoverExtractor:
             return Cover(epub.readFirstInPaths(settings['paths']))
         except KeyError:
             return None
+
+
+class ExtractError(Exception):
+    pass

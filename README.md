@@ -14,6 +14,8 @@ Bookshelf is a web based view of your ebook collection.
 - Admin area to fill in missing information and pick images
 - Search for cover images that have no matching ebook and remove them
 - Save time by not processing ebooks that have not been modified. store modified date or checksum
+- Create install file
+- Wrap with python web server for interactive UI
 
 # Key Features #
 
